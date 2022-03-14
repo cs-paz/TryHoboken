@@ -1,7 +1,7 @@
-const testRoutes = require("./test");
+const restaurantRoutes = require("./restaurants");
 
 const constructorMethod = (app) => {
-  app.use("/test", testRoutes);
+  app.use("/restaurants", restaurantRoutes);
 
   app.use("*", (req, res) => {
     res.status(404).json({ error: "Not found" });

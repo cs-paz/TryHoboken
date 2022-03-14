@@ -12,5 +12,5 @@ const getCollectionFn = (collection) => {
 };
 
 module.exports = {
-  weddioDB: getCollectionFn("weddioDB"),
+  restaurants: getCollectionFn("restaurants"),
 };
