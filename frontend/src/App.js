@@ -7,13 +7,6 @@ import Restaurants from "./pages/restaurants/Restaurants";
 import Bars from "./pages/bars/Bars";
 
 function App() {
-  // useEffect(async () => {
-  //   const { data } = await axios.get("http://localhost:3001/test");
-  //   if (data.test === "success") {
-  //     setSuccess(true);
-  //   }
-  // }, []);
-
   return (
     <div>
       <Routes>
