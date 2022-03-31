@@ -1,4 +1,5 @@
 const { restaurants } = require("./config/mongoCollections");
+const { bars } = require("./config/mongoCollections");
 const connection = require("./config/mongoConnection");
 const ObjectID = require("mongodb").ObjectID;
 
@@ -171,11 +172,25 @@ const restaurantsData = [
   },
 ];
 
+const barsData = [
+  {
+    name: "The Pig and the Parrot",
+    type: "Tropical",
+    address: "77 Hudson Street, Hoboken, NJ 07030",
+    description:
+      "It's a Happy Place! The Pig & Parrot is a Key West type Bar & Grill with tropical food & drink menu. Fun atmosphere & music that you love to hear but no one plays: Bob Marley, Jimmy Buffet, Kenny Chesney.",
+    url: "https://www.thepigandparrot.com/hoboken",
+  },
+];
+
 const main = async () => {
   console.log("Seeding restaurants...");
   const restaurantsCollection = await restaurants();
-  const insertInfo = await restaurantsCollection.insertMany(restaurantsData);
+  let insertInfo = await restaurantsCollection.insertMany(restaurantsData);
   console.log(`Inserted ${insertInfo.insertedCount} restaurants`);
+  const barsCollection = await bars();
+  insertInfo = await barsCollection.insertMany(barsData);
+  console.log(`Inserted ${insertInfo.insertedCount} bars`);
 };
 
 main();

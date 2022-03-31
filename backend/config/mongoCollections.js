@@ -13,4 +13,5 @@ const getCollectionFn = (collection) => {
 
 module.exports = {
   restaurants: getCollectionFn("restaurants"),
+  bars: getCollectionFn("bars"),
 };
