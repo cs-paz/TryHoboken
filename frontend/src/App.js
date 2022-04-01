@@ -11,9 +11,11 @@ import IndividualBar from "./pages/bars/IndividualBar";
 function App() {
   return (
     <div>
-      {/* <nav>
-       <Link to="/restaurants">Restaurants</Link> 
-      </nav> */}
+       <nav>
+         <Link to="/">Home</Link>|        
+         <Link to="/restaurants">Restaurants</Link>|
+         <Link to="/bars">Bars</Link> 
+        </nav> 
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/restaurants" element={<Restaurants />} />
