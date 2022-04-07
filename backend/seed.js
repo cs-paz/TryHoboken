@@ -9,6 +9,7 @@ const template = {
   address: "",
   description: "",
   url: "",
+  comments: [],
 };
 
 const restaurantsData = [

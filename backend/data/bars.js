@@ -28,7 +28,69 @@ const getBarById = async (id) => {
   return bar;
 };
 
+//This will update a bar page with a new comment and returns the bar json, should throw an error if no bars with the matching id
+const addComment = async (id, comment) =>{
+  if (!id){
+    throw 'Must enter id';
+  }
+  //ids must be passed as a string for this to work, might change it later.
+  if (typeof id != 'string'){
+    throw 'The id must be a string';
+  }
+  if (id.trim().length === 0){
+    throw 'The id cannot be empty spaces';
+  }
+  if (!comment){
+    throw 'Comment must not be empty';
+  }
+  //Comments must be strings to be passed in, could probably be updated to change all comments to strings
+  if (typeof comment != 'string'){
+    throw 'Comment must be a string';
+  }
+
+  let usableId = ObjectId(id);
+  if (!ObjectId.isValid(usableId)){
+    throw 'Must enter valid ObjectId';
+  }
+  //Find bar using id, get existing comments
+  const barsCollection = await bars();
+  let foundBar;
+  try{
+    foundBar = await getBarById(id);
+  }
+  catch(e){
+    throw e;
+  }
+  //add new comment to existing comments
+  let newComments = foundBar.comments;
+  newComments.push(comment)
+  let updateInfo;
+  try{
+    updateInfo = await barsCollection.updateOne(
+      {_id: usableId},
+      {$set: {comments: newComments}});
+  }
+  catch(e){
+    throw e;
+  }
+
+  if (updateInfo.modifiedCount === 0){
+    throw 'Bar with id ${id} failed to update comments.';
+  }
+
+  //get updated bar to return
+  let result;
+  try{
+    result = await getBarById(id);
+  }
+  catch(e){
+    throw e;
+  }
+  return result;
+}
+
 module.exports = {
   getAllBars,
   getBarById,
+  addComment,
 };
