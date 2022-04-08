@@ -75,7 +75,7 @@ const addComment = async (id, comment) =>{
   }
 
   if (updateInfo.modifiedCount === 0){
-    throw 'Bar with id ${id} failed to update comments.';
+    throw `Bar with id ${id} failed to update comments.`;
   }
 
   //get updated bar to return
@@ -89,8 +89,36 @@ const addComment = async (id, comment) =>{
   return result;
 }
 
+//takes type as an input, returns array of matching bars, if none are found, return empty array;
+const getBarsByType = async (type) => {
+  if(!type){
+    throw 'Must enter type';
+  }
+  if (typeof type != 'string'){
+    throw 'Type must be a string';
+  }
+  if (type.trim().length == 0){
+    throw 'Type cannot be only spaces';
+  }
+  let barCollection = await bars();
+  let foundBars;
+  let result = [];
+  try{
+    foundBars = await barCollection.find({type: type});
+  }
+  catch(e){
+    throw e;
+  }
+  if (foundBars.hasNext()){
+    result = foundBars.toArray();
+  }
+  return result;
+
+}
+
 module.exports = {
   getAllBars,
   getBarById,
   addComment,
+  getBarsByType,
 };

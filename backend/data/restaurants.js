@@ -75,13 +75,13 @@ const addComment = async (id, comment) =>{
   }
 
   if (updateInfo.modifiedCount === 0){
-    throw 'Restaurant with id ${id} failed to update comments.';
+    throw `Restaurant with id ${id} failed to update comments.`;
   }
 
   //get updated restaurant to return
   let result;
   try{
-    result = await getBarById(id);
+    result = await getRestaurantById(id);
   }
   catch(e){
     throw e;
@@ -89,8 +89,36 @@ const addComment = async (id, comment) =>{
   return result;
 }
 
+//takes type as an input, returns array of matching restaurants, if none are found, return empty array;
+const getRestaurantsByType = async (type) => {
+  if(!type){
+    throw 'Must enter type';
+  }
+  if (typeof type != 'string'){
+    throw 'Type must be a string';
+  }
+  if (type.trim().length == 0){
+    throw 'Type cannot be only spaces';
+  }
+  let restaurantCollection = await restaurants();
+  let foundRestaurants;
+  let result = [];
+  try{
+    foundRestaurants = await restaurantCollection.find({type: type});
+  }
+  catch(e){
+    throw e;
+  }
+  if (foundRestaurants.hasNext()){
+    result = foundRestaurants.toArray();
+  }
+  return result;
+
+}
+
 module.exports = {
   getAllRestaurants,
   getRestaurantById,
   addComment,
+  getRestaurantsByType,
 };
