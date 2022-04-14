@@ -1,7 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const ObjectID = require("mongodb").ObjectID;
-const { getAllRestaurants, getRestaurantById } = require("../data/restaurants");
+const {
+  getAllRestaurants,
+  getRestaurantById,
+  addComment,
+} = require("../data/restaurants");
 
 router.get("/", async (req, res) => {
   try {
@@ -19,6 +23,18 @@ router.get("/:id", async (req, res) => {
     res.json(restaurant);
   } catch (e) {
     res.status(500).send(e);
+  }
+});
+
+router.post("/comment/:id", async (req, res) => {
+  let id = req.params.id;
+  let comment = req.body.comment;
+  try {
+    const rest = await addComment(id, comment);
+    res.json(rest);
+  } catch (e) {
+    res.status(500).send(e);
+    console.log(e);
   }
 });
 

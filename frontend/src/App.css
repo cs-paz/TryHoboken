@@ -1,0 +1,17 @@
+#addCommentForm {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#commentSubmit {
+  width: 250px;
+}
+
+.commentInput {
+  margin: 10px;
+}
+
+.commentsSection {
+  list-style: none;
+}

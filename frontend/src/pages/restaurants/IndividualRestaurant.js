@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
+import CommentsSection from "../CommentsSection";
+import AddComment from "../AddComment";
 
 const IndividualRestaurant = () => {
   const [restaurantData, setRestaurantData] = useState(undefined);
@@ -13,7 +15,7 @@ const IndividualRestaurant = () => {
       setRestaurantData(data);
     }
     getRestaurantData();
-  }, []);
+  }, [id]);
 
   const displayData = restaurantData && (
     <div>
@@ -24,6 +26,8 @@ const IndividualRestaurant = () => {
       <a href={restaurantData.url} target="_blank">
         {restaurantData.url}
       </a>
+      <AddComment id={id} type="restaurants" />
+      <CommentsSection comments={restaurantData.comments} />
     </div>
   );
 

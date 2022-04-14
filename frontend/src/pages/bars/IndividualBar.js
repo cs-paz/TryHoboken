@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
+import CommentsSection from "../CommentsSection";
+import AddComment from "../AddComment";
 
 const IndividualBar = () => {
   const [barData, setBarData] = useState(undefined);
   const { id } = useParams();
 
   useEffect(() => {
-    async function getRestaurantData() {
+    async function getBarData() {
       let url = "http://localhost:3001/bars/" + id;
       const { data } = await axios.get(url);
       setBarData(data);
     }
-    getRestaurantData();
-  }, []);
-
-  console.log(barData);
+    getBarData();
+  }, [id]);
 
   const displayData = barData && (
     <div>
@@ -26,6 +26,8 @@ const IndividualBar = () => {
       <a href={barData.url} target="_blank">
         {barData.url}
       </a>
+      <AddComment id={id} barData type={"bars"} />
+      <CommentsSection comments={barData.comments} />
     </div>
   );
 
