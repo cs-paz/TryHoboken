@@ -174,8 +174,6 @@ const restaurantsData = [
  {
    "name": "Fiore's Deli",
    "type": "Italian Deli",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "414 Adams St, Hoboken, NJ 07030-2693",
    "description": "A classic Italian deli serving the Mile Square since 1903",
    "url": ""
@@ -183,8 +181,6 @@ const restaurantsData = [
  {
    "name": "Amanda's Bakery",
    "type": "Argentinian",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "908 Washington St Ste A, Hoboken, NJ 07030-5152",
    "description": "New American cuisine with an Argentine twist. Enjoy live music from talented local musicians performing during brunch and dinner service. ",
    "url": "https://www.amandasrestaurant.com/"
@@ -192,8 +188,6 @@ const restaurantsData = [
  {
    "name": "La Isla",
    "type": "Cuban",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "104 Washington Street Uptown Location: 25 12th St., Hoboken, NJ 07030-4604",
    "description": "Havana meets Miami in Hoboken! The original La Isla Restaurant at 104 Washington Street has been an institution in downtown Hoboken since 1970. Taken over by the Luis and Giner families in 1996 it has attained local cult status, serving “incredible Cuban food morning, day and night” with Sunday brunch “being a divine reason to skip church” according to Zagat. With Chef Omar Giner at the helm, we are committed to serving traditional Cuban food made from the freshest and most genuine ingredients, served in generous portions at affordable prices in a friendly and unpretentious neighborhood atmosphere.",
    "url": "https://laislarestaurant.com/"
@@ -201,8 +195,6 @@ const restaurantsData = [
  {
    "name": "Benny Tudino's",
    "type": "Pizza",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "622 Washington St, Hoboken, NJ 07030-4908",
    "description": "Home of the largest slice",
    "url": "https://bennytudinos.com/"
@@ -210,8 +202,6 @@ const restaurantsData = [
  {
    "name": "The Cuban",
    "type": "Cuban",
-   "resturaunt": "Y",
-   "bar": "Y",
    "address": "333 Washington St, Hoboken, NJ 07030-4871",
    "description": "This bi-level restaurant offers Cuban fare, daily specials & live music in a stylish setting.",
    "url": ""
@@ -219,44 +209,20 @@ const restaurantsData = [
  {
    "name": "Elysian Café",
    "type": "Café",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "1001 Washington St, Hoboken, NJ 07030-5201",
    "description": "Modern French bistro fare & classics like steak frites served in a restored saloon dating from 1895.",
    "url": "https://elysiancafe.com/"
  },
  {
-   "name": "Grimaldi's",
-   "type": "Pizza",
-   "resturaunt": "Y",
-   "bar": "",
-   "address": "133 Clinton St, Hoboken, NJ 07030-2501",
-   "description": "Casual, Brooklyn-based pizzeria chain serving brick-oven pies & calzones plus wine & beer.",
-   "url": "https://www.grimaldis.com/"
- },
- {
    "name": "Augustinos",
    "type": "Italian",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "1104 Washington St, Hoboken, NJ 07030-5381",
    "description": "Dishing pasta, fish & meat, this cash-only Southern Italian eatery features a feisty staff.",
    "url": ""
  },
  {
-   "name": "Karma Kafe",
-   "type": "Indian",
-   "resturaunt": "Y",
-   "bar": "",
-   "address": "505 Washington St, Hoboken, NJ 07030-4992",
-   "description": "This small Indian spot offers big portions & a lunch buffet in a simple space with sidewalk seating.",
-   "url": "http://www.karmakafe.com/"
- },
- {
    "name": "Turning Point",
    "type": "Café",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "1440 Frank Sinatra Dr, Hoboken, NJ 07030",
    "description": "Daytime cafe chain serving breakfast, sandwiches, tea & coffee drinks in stylish surroundings.",
    "url": "https://turningpointrestaurants.com/menu/"
@@ -264,8 +230,6 @@ const restaurantsData = [
  {
    "name": "Vitos",
    "type": "Deli",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "806 Washington St, Hoboken, NJ 07030-7040",
    "description": "Classic Italian deli offering sandwiches & salads, imported groceries & housemade mozzarella.",
    "url": "https://www.vitosdeli.com/"
@@ -273,8 +237,6 @@ const restaurantsData = [
  {
    "name": "Basile's",
    "type": "Pizza",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "89 Washington St, Hoboken, NJ 07030-4526",
    "description": "A menu of classic, creative, & build-your-own pizzas by the slice or pie with limited seating.",
    "url": "https://www.mybasilespizza.com/"
@@ -282,8 +244,6 @@ const restaurantsData = [
  {
    "name": "Dino & Harrys",
    "type": "Steakhouse",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "163 14th St, Hoboken, NJ 07030-4452",
    "description": "Classic steakhouse housed in a 19th-century saloon with stained glass, a tin ceiling & live music.",
    "url": "https://www.dinoandharrys.com/"
@@ -291,8 +251,6 @@ const restaurantsData = [
  {
    "name": "Satay",
    "type": "Malaysian",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "99 Washington St, Hoboken, NJ 07030-4586",
    "description": "Malaysian Culture Food in Satay Malaysian Cuisine Resturaunt",
    "url": "https://satay1.com/"
@@ -300,8 +258,6 @@ const restaurantsData = [
  {
    "name": "Arthur's",
    "type": "Steakhouse",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "237 Washington St, Hoboken, NJ 07030-4738",
    "description": "Steaks & burgers are served on checkered tablecloths at this longtime, no-reservations eatery.",
    "url": "https://arthurshoboken.com/"
@@ -309,8 +265,6 @@ const restaurantsData = [
  {
    "name": "Halifax",
    "type": "American",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "225 River Street, Hoboken, NJ 07030",
    "description": "Sleek destination inside the W Hotel offering New American eats made with farm-fresh ingredients.",
    "url": "https://www.halifaxhoboken.com/"
@@ -318,8 +272,6 @@ const restaurantsData = [
  {
    "name": "Leo's Grandevous",
    "type": "Italian",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "200 Grand St Ste A, Hoboken, NJ 07030-8546",
    "description": "Mainstay from 1939 serving Italian classics & cocktails in an old-school setting with Sinatra tunes.",
    "url": "https://www.leosgrandevous.com/"
@@ -327,8 +279,6 @@ const restaurantsData = [
  {
    "name": "Tony Boloney's",
    "type": "Pizza",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "263 1st St, Hoboken, NJ 07030-4191",
    "description": "Hip, buzzing spot for creatively named pizzas, subs & other snacks, with inventive topping options.",
    "url": "https://www.tonyboloneys.com/"
@@ -336,8 +286,6 @@ const restaurantsData = [
  {
    "name": "Anthony David's Gourmet",
    "type": "American",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "953 Bloomfield St, Hoboken, NJ 07030-5107",
    "description": "Creative Italian BYOB spot for dinner/brunch served in a storefront gourmet shop or on the sidewalk.",
    "url": "https://anthonydavids.com/"
@@ -345,8 +293,6 @@ const restaurantsData = [
  {
    "name": "Bareburger",
    "type": "American",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "515 Washington St, Hoboken, NJ 07030-4997",
    "description": "Casual, eco-minded regional chain for organic burgers (from beef to bison) & more, plus beer & wine.",
    "url": "https://bareburger.com/"
@@ -354,8 +300,6 @@ const restaurantsData = [
  {
    "name": "Johnny Rockets",
    "type": "American",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "134 Washington St, Hoboken, NJ 07030-4604",
    "description": "Burgers, shakes & fries arrive in a retro setting at this outpost of the international chain.",
    "url": "https://locations.johnnyrockets.com/ll/US/NJ/Hoboken/134-Washington-St_"
@@ -363,8 +307,6 @@ const restaurantsData = [
  {
    "name": "Margherita's ",
    "type": "Italian",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "740 Washington St, Hoboken, NJ 07030-5015",
    "description": "This lively pizzeria features signature pies, housemade pastas & outdoor seating.",
    "url": "https://www.margheritasrestaurant.com/"
@@ -372,8 +314,6 @@ const restaurantsData = [
  {
    "name": "The Brass Rail",
    "type": "American",
-   "resturaunt": "Y",
-   "bar": "Y",
    "address": "135 Washington St, Hoboken, NJ 07030",
    "description": "Lively bar scene on the street level & a New American menu served in an upstairs dining room.",
    "url": "http://thebrassrailnj.com/"
@@ -381,75 +321,10 @@ const restaurantsData = [
  {
    "name": "Lisa's Italian Deli",
    "type": "Deli",
-   "resturaunt": "Y",
-   "bar": "",
    "address": "901 Park Ave, Hoboken, NJ 07030-4277",
    "description": "Veteran, family-run Italian deli counter selling breakfast, pasta dishes & hot & cold sandwiches.",
    "url": "http://www.lisasdeli.com/"
  },
- {
-   "name": "",
-   "type": "",
-   "resturaunt": "",
-   "bar": "",
-   "address": "",
-   "description": "",
-   "url": ""
- },
- {
-   "name": "",
-   "type": "",
-   "resturaunt": "",
-   "bar": "",
-   "address": "",
-   "description": "",
-   "url": ""
- },
- {
-   "name": "",
-   "type": "",
-   "resturaunt": "",
-   "bar": "",
-   "address": "",
-   "description": "",
-   "url": ""
- },
- {
-   "name": "",
-   "type": "",
-   "resturaunt": "",
-   "bar": "",
-   "address": "",
-   "description": "",
-   "url": ""
- },
- {
-   "name": "",
-   "type": "",
-   "resturaunt": "",
-   "bar": "",
-   "address": "",
-   "description": "",
-   "url": ""
- },
- {
-   "name": "",
-   "type": "",
-   "resturaunt": "",
-   "bar": "",
-   "address": "",
-   "description": "",
-   "url": ""
- },
- {
-   "name": "",
-   "type": "",
-   "resturaunt": "",
-   "bar": "",
-   "address": "",
-   "description": "",
-   "url": ""
- }
 ];
 
 const barsData = [
@@ -464,8 +339,6 @@ const barsData = [
  {
    "name": "The Cuban",
    "type": "Cuban",
-   "resturaunt": "Y",
-   "bar": "Y",
    "address": "333 Washington St, Hoboken, NJ 07030-4871",
    "description": "This bi-level restaurant offers Cuban fare, daily specials & live music in a stylish setting.",
    "url": ""
@@ -473,8 +346,6 @@ const barsData = [
  {
    "name": "Court Street",
    "type": "American",
-   "resturaunt": "",
-   "bar": "Y",
    "address": "61 6th St Ste A, Hoboken, NJ 07030-4945",
    "description": "Classic American surf & turf plus Continental faves in a cozy white-tablecloth space with a bar.",
    "url": "https://www.courtstreet.com/"
@@ -491,8 +362,6 @@ const barsData = [
  {
    "name": "Carpe Diem",
    "type": "American",
-   "resturaunt": "",
-   "bar": "Y",
    "address": "1405 Grand St, Hoboken, NJ 07030-2322",
    "description": "Convivial haunt featuring Irish pub grub & a large beer list, plus a fireplace & outdoor seating.",
    "url": "https://www.carpediemhoboken.com/menus"
@@ -500,8 +369,6 @@ const barsData = [
  {
    "name": "Del Frisco's",
    "type": "Steakhouse",
-   "resturaunt": "",
-   "bar": "Y",
    "address": "221 River St, Hoboken, NJ 07030",
    "description": "Sophisticated chophouse chain serving steak, seafood, sandwiches & cocktails in a trendy space.",
    "url": "https://www.delfriscosgrille.com/location/del-friscos-grille-hoboken-nj/#menus"
@@ -509,8 +376,6 @@ const barsData = [
  {
    "name": "The Madison",
    "type": "Pizza",
-   "resturaunt": "",
-   "bar": "Y",
    "address": "1316 Washington St, Hoboken, NJ 07030-5534",
    "description": "New American fare & drink specials in a roadhouse-style space that's bustling on weekends.",
    "url": "https://www.madisonbarandgrill.com/"
@@ -518,8 +383,6 @@ const barsData = [
  {
    "name": "Bin 14 Bistro",
    "type": "Spanish",
-   "resturaunt": "",
-   "bar": "Y",
    "address": "1314 Washington St, Hoboken, NJ 07030-5535",
    "description": "Upscale wine bar where various vintages are pairable with a menu of Italian small plates.",
    "url": "http://bin14.com/"
@@ -527,8 +390,6 @@ const barsData = [
  {
    "name": "The Brass Rail",
    "type": "American",
-   "resturaunt": "Y",
-   "bar": "Y",
    "address": "135 Washington St, Hoboken, NJ 07030",
    "description": "Lively bar scene on the street level & a New American menu served in an upstairs dining room.",
    "url": "http://thebrassrailnj.com/"
