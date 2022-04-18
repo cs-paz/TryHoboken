@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter style={{}}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,

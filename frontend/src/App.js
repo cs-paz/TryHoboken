@@ -6,9 +6,19 @@ import IndividualRestaurant from "./pages/restaurants/IndividualRestaurant";
 import IndividualBar from "./pages/bars/IndividualBar";
 import "./App.css";
 
+const styles = {
+  main: {
+    margin: "auto",
+    width: "80%",
+    backgroundColor: "#f5f5f5",
+    borderRadius: "10px",
+    padding: "20px 30px",
+  },
+};
+
 function App() {
   return (
-    <div>
+    <div style={styles.main}>
       <nav>
         <Link to="/">Home</Link>|<Link to="/restaurants">Restaurants</Link>|
         <Link to="/bars">Bars</Link>
