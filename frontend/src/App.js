@@ -19,10 +19,11 @@ const styles = {
 function App() {
   return (
     <div style={styles.main}>
-      <nav>
-        <Link to="/">Home</Link>|<Link to="/restaurants">Restaurants</Link>|
-        <Link to="/bars">Bars</Link>
-      </nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/restaurants">Restaurants</a></li>
+        <li><a href="/bars">Bars</a></li>
+      </ul>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/restaurants" element={<Restaurants />} />
