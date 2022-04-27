@@ -58,7 +58,6 @@ const Bar = (bar) => {
         <p>{bar.bar.description}</p>
         <p>{bar.bar.type}</p>
         <p>{bar.bar.address}</p>
-        <p>{bar.bar.description}</p>
         <a href={bar.bar.url}>{bar.bar.url}</a>
       </div>
     </div>

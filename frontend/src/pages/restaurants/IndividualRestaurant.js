@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import CommentsSection from "../CommentsSection";
 import AddComment from "../AddComment";
@@ -23,7 +23,7 @@ const IndividualRestaurant = () => {
       <p>{restaurantData.type}</p>
       <p>{restaurantData.address}</p>
       <p>{restaurantData.description}</p>
-      <a href={restaurantData.url} target="_blank">
+      <a href={restaurantData.url} target="_blank" rel="noreferrer">
         {restaurantData.url}
       </a>
       <AddComment id={id} type="restaurants" />
@@ -31,12 +31,7 @@ const IndividualRestaurant = () => {
     </div>
   );
 
-  return (
-    <div>
-      <Link to={"/restaurants"}>Back to all restaurants</Link>
-      {displayData}
-    </div>
-  );
+  return <div>{displayData}</div>;
 };
 
 export default IndividualRestaurant;

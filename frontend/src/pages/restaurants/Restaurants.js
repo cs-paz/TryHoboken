@@ -58,7 +58,6 @@ const Restaurant = (restaurant) => {
         <p>{restaurant.restaurant.description}</p>
         <p>{restaurant.restaurant.type}</p>
         <p>{restaurant.restaurant.address}</p>
-        <p>{restaurant.restaurant.description}</p>
         <a href={restaurant.restaurant.url}>{restaurant.restaurant.url}</a>
       </div>
     </div>

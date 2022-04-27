@@ -10,7 +10,7 @@ const CommentsSection = (props) => {
       <ul className="commentsSection">
         {comments.map((comment) => {
           return (
-            <li key={comment.commentBody}>
+            <li key={comment.commentBody} className="comment">
               {comment.posterName}: {comment.commentBody}
             </li>
           );

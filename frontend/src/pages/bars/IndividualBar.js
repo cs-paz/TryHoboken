@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import CommentsSection from "../CommentsSection";
 import AddComment from "../AddComment";
@@ -23,7 +23,7 @@ const IndividualBar = () => {
       <p>{barData.type}</p>
       <p>{barData.address}</p>
       <p>{barData.description}</p>
-      <a href={barData.url} target="_blank">
+      <a href={barData.url} target="_blank" rel="noreferrer">
         {barData.url}
       </a>
       <AddComment id={id} barData type={"bars"} />
@@ -31,12 +31,7 @@ const IndividualBar = () => {
     </div>
   );
 
-  return (
-    <div>
-      <Link to={"/bars"}>Back to all bars</Link>
-      {displayData}
-    </div>
-  );
+  return <div>{displayData}</div>;
 };
 
 export default IndividualBar;
