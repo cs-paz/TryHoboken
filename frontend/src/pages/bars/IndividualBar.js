@@ -18,15 +18,21 @@ const IndividualBar = () => {
   }, [id]);
 
   const displayData = barData && (
-    <div>
-      <h1>{barData.name}</h1>
+    <div class="card text-center justify-content-center">
+      <div class="card-header">
+        <h1>{barData.name}</h1>
+      </div>
+      <div class="card-body">
       <p>{barData.type}</p>
       <p>{barData.address}</p>
       <p>{barData.description}</p>
       <a href={barData.url} target="_blank" rel="noreferrer">
         {barData.url}
       </a>
+      </div>
+      <div class="card-footer text-center justify-content-center">
       <AddComment id={id} barData type={"bars"} />
+      </div>
       <CommentsSection comments={barData.comments} />
     </div>
   );
