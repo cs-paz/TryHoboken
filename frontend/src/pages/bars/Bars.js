@@ -33,10 +33,10 @@ const BarsPage = () => {
   }, []);
 
   return (
-    <div style={styles.main}>
+    <div class="card">
       {bars.map((bar) => {
         return (
-          <div key={bar._id} style={styles.listElem}>
+          <div key={bar._id}>
             <Bar bar={bar} />
           </div>
         );
@@ -48,13 +48,13 @@ const BarsPage = () => {
 const Bar = (bar) => {
   const link = "/bars/" + bar.bar._id;
   return (
-    <div>
-      <div style={styles.title}>
+    <div class="card text-center justify-content-center">
+      <div class="card-header">
         <h1>
           <Link to={link}>{bar.bar.name}</Link>
         </h1>
       </div>
-      <div style={styles.textBox}>
+      <div class="card-body">
         <p>{bar.bar.description}</p>
         <p>{bar.bar.type}</p>
         <p>{bar.bar.address}</p>

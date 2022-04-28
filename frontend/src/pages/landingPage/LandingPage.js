@@ -1,10 +1,9 @@
 const hoboken=require('./hoboken.jpg');
 const LandingPage = () => {
   return (
-    <div>
+    <div class="container">
       <h1>Try Hoboken</h1>
       <div>
-        <h2>Hoboken</h2>
         <img alt="Hoboken" src={hoboken}></img>
         <p>Don’t let Hoboken’s mile-square size fool you. It may be small, but its brownstones radiate a big city’s vibe of youthful energy complete with hip restaurants, cool bars and funky shops.
   This vibrant, walk-able small town is a unique delight. Its strategic location on the banks of the Hudson River across from lower Manhattan means waterside walkways boast postcard-perfect views from day to night.</p>
