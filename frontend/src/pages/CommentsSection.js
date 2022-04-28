@@ -7,10 +7,10 @@ const CommentsSection = (props) => {
     return <h3>There are no comments yet!</h3>;
   } else {
     return (
-      <ul className="commentsSection">
+      <ul>
         {comments.map((comment) => {
           return (
-            <li key={comment.commentBody} className="comment">
+            <li key={comment.commentBody}>
               {comment.posterName}: {comment.commentBody}
             </li>
           );
