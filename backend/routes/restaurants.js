@@ -38,4 +38,15 @@ router.post("/comment/:id", async (req, res) => {
   }
 });
 
+router.post("/type/:type", async (req, res) => {
+  let type = req.params.type;
+  try {
+    const restaurants = await getRestaurantsByType(type);
+    res.json(restaurants);
+  }
+  catch(e){
+    res.status(500).send(e);
+  }
+});
+
 module.exports = router;

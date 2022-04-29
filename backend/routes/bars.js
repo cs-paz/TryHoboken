@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const ObjectID = require("mongodb").ObjectID;
-const { getAllBars, getBarById, addComment } = require("../data/bars");
+const { getAllBars, getBarById, addComment, getBarsByType } = require("../data/bars");
 
 router.get("/", async (req, res) => {
   try {
@@ -33,4 +33,14 @@ router.post("/comment/:id", async (req, res) => {
   }
 });
 
+router.post("/type/:type", async (req, res) => {
+  let type = req.params.type;
+  try {
+    const bars = await getBarsByType(type);
+    res.json(bars);
+  }
+  catch(e){
+    res.status(500).send(e);
+  }
+});
 module.exports = router;
