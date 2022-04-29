@@ -5,6 +5,7 @@ const {
   getAllRestaurants,
   getRestaurantById,
   addComment,
+  getRestaurantsByType,
 } = require("../data/restaurants");
 
 router.get("/", async (req, res) => {
