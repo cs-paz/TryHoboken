@@ -33,10 +33,10 @@ const RestaurantsPage = () => {
   }, []);
 
   return (
-    <div style={styles.main}>
+    <div class="card">
       {restaurants.map((restaurant) => {
         return (
-          <div key={restaurant._id} style={styles.listElem}>
+          <div key={restaurant._id}>
             <Restaurant restaurant={restaurant} />
           </div>
         );
@@ -48,13 +48,13 @@ const RestaurantsPage = () => {
 const Restaurant = (restaurant) => {
   const link = "/restaurants/" + restaurant.restaurant._id;
   return (
-    <div>
-      <div style={styles.title}>
+    <div class="card text-center justify-content-center">
+      <div class="card-header">
         <h1>
           <Link to={link}>{restaurant.restaurant.name}</Link>
         </h1>
       </div>
-      <div style={styles.textBox}>
+      <div class="card-body">
         <p>{restaurant.restaurant.description}</p>
         <p>{restaurant.restaurant.type}</p>
         <p>{restaurant.restaurant.address}</p>

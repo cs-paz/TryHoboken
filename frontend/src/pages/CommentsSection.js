@@ -7,10 +7,10 @@ const CommentsSection = (props) => {
     return <h3>There are no comments yet!</h3>;
   } else {
     return (
-      <ul className="commentsSection">
+      <ul class="list-group list-group-flush">
         {comments.map((comment) => {
           return (
-            <li key={comment.commentBody} className="comment">
+            <li class="list-group-item" key={comment.commentBody}>
               {comment.posterName}: {comment.commentBody}
             </li>
           );

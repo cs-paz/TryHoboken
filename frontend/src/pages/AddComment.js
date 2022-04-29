@@ -36,25 +36,28 @@ const AddComment = (props) => {
           document.getElementById("commentName").value = "";
           document.getElementById("commentBody").value = "";
         }}
-        className="commentForm"
       >
+        <div class="form-group">
         <label>
           Enter your name
           <input
             name="commentName"
             id="commentName"
-            className="commentInput"
+            class="form-control"
           ></input>
         </label>
+        </div>
+        <div class="form-group">
         <label>
           Enter your comment here
           <textarea
             name="commentBody"
             id="commentBody"
-            className="commentInput"
+            class="form-control"
           ></textarea>
         </label>
-        <input type="submit" value="Enter" id="commentSubmit"></input>
+        </div>
+        <input type="submit" value="Enter" id="commentSubmit" class="btn btn-primary"></input>
       </form>
     </div>
   );

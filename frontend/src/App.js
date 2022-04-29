@@ -18,20 +18,28 @@ const styles = {
 
 function App() {
   return (
-    <div style={styles.main}>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/restaurants">Restaurants</a></li>
-        <li><a href="/bars">Bars</a></li>
-      </ul>
+    <div class="container pt-1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="navbar-header">
+            <a class="navbar-brand">Try Hoboken</a>
+          </div>
+            <ul class="nav navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+              <li ckass="nav-item"><a class="nav-link" href="/restaurants">Restaurants</a></li>
+              <li class="nav-item"><a class="nav-link" href="/bars">Bars</a></li>
+            </ul>
+    
+      </nav>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/restaurants" element={<Restaurants />} />
-        <Route path="/restaurants/:id" element={<IndividualRestaurant />} />
-        <Route path="/bars" element={<Bars />} />
-        <Route path="/bars/:id" element={<IndividualBar />} />
-      </Routes>
-    </div>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/restaurants" element={<Restaurants />} />
+      <Route path="/restaurants/:id" element={<IndividualRestaurant />} />
+      <Route path="/bars" element={<Bars />} />
+      <Route path="/bars/:id" element={<IndividualBar />} />
+    </Routes>
+      </div>
+      
+    
   );
 }
 
