@@ -1,7 +1,22 @@
 const express = require("express");
 const router = express.Router();
 const ObjectID = require("mongodb").ObjectID;
-const { getAllBars, getBarById, addComment, getBarsByType } = require("../data/bars");
+const {
+  getAllBars,
+  getBarById,
+  addComment,
+  getBarsByType,
+  getAllBarTypes,
+} = require("../data/bars");
+
+router.get("/types", async (req, res) => {
+  try {
+    const types = await getAllBarTypes();
+    res.json(types);
+  } catch (e) {
+    res.status(500).send(e);
+  }
+});
 
 router.get("/", async (req, res) => {
   try {
@@ -38,9 +53,9 @@ router.post("/type/:type", async (req, res) => {
   try {
     const bars = await getBarsByType(type);
     res.json(bars);
-  }
-  catch(e){
+  } catch (e) {
     res.status(500).send(e);
   }
 });
+
 module.exports = router;

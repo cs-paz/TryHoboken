@@ -26,14 +26,58 @@ const styles = {
 
 const BarsPage = () => {
   const [bars, setBars] = useState([]);
+  const [options, setOptions] = useState([]);
 
   useEffect(async () => {
     const { data } = await axios.get("http://localhost:3001/bars");
     setBars(data);
   }, []);
 
+  useEffect(async () => {
+    const { data } = await axios.get("http://localhost:3001/bars/types");
+    let option = ["All"];
+    option = option.concat(data);
+    setOptions(option);
+  }, []);
+
+  const getBarsByOption = async (type) => {
+    if (type == "All") {
+      const { data } = await axios.get("http://localhost:3001/bars");
+      return data;
+    }
+    const { data } = await axios.post(
+      `http://localhost:3001/bars/type/${type}`
+    );
+    return data;
+  };
+
   return (
     <div class="card">
+      <div>
+        <label className="form-select">
+          <select id="filterByType">
+            {options.map((option) => {
+              return (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              );
+            })}
+          </select>
+        </label>
+        <button
+          className="btn btn-secondary"
+          onClick={async (e) => {
+            e.preventDefault();
+            const select = document.getElementById("filterByType");
+            let val = select.value;
+            let typeBars = await getBarsByOption(val);
+            setBars(typeBars);
+          }}
+        >
+          Filter
+        </button>
+      </div>
       {bars.map((bar) => {
         return (
           <div key={bar._id}>

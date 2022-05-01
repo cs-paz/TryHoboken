@@ -112,9 +112,24 @@ const getRestaurantsByType = async (type) => {
   return result;
 };
 
+const getAllRestaurantTypes = async () => {
+  let allRestaurants = await getAllRestaurants();
+
+  let types = [];
+  for (let restaurant of allRestaurants) {
+    if (types.includes(restaurant.type)) {
+      continue;
+    }
+    types.push(restaurant.type);
+  }
+
+  return types;
+};
+
 module.exports = {
   getAllRestaurants,
   getRestaurantById,
   addComment,
   getRestaurantsByType,
+  getAllRestaurantTypes,
 };

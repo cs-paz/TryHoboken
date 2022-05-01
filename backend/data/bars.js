@@ -112,9 +112,24 @@ const getBarsByType = async (type) => {
   return result;
 };
 
+const getAllBarTypes = async () => {
+  let allBars = await getAllBars();
+
+  let types = [];
+  for (let bar of allBars) {
+    if (types.includes(bar.type)) {
+      continue;
+    }
+    types.push(bar.type);
+  }
+
+  return types;
+};
+
 module.exports = {
   getAllBars,
   getBarById,
   addComment,
   getBarsByType,
+  getAllBarTypes,
 };

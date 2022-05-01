@@ -26,14 +26,58 @@ const styles = {
 
 const RestaurantsPage = () => {
   const [restaurants, setRestaurants] = useState([]);
+  const [options, setOptions] = useState([]);
 
   useEffect(async () => {
     const { data } = await axios.get("http://localhost:3001/restaurants");
     setRestaurants(data);
   }, []);
 
+  useEffect(async () => {
+    const { data } = await axios.get("http://localhost:3001/restaurants/types");
+    let option = ["All"];
+    option = option.concat(data);
+    setOptions(option);
+  }, []);
+
+  const getRestaurantsByOption = async (type) => {
+    if (type == "All") {
+      const { data } = await axios.get("http://localhost:3001/restaurants");
+      return data;
+    }
+    const { data } = await axios.post(
+      `http://localhost:3001/restaurants/type/${type}`
+    );
+    return data;
+  };
+
   return (
     <div class="card">
+      <div>
+        <label className="form-select">
+          <select id="filterByType">
+            {options.map((option) => {
+              return (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              );
+            })}
+          </select>
+        </label>
+        <button
+          className="btn btn-secondary"
+          onClick={async (e) => {
+            e.preventDefault();
+            const select = document.getElementById("filterByType");
+            let val = select.value;
+            let rests = await getRestaurantsByOption(val);
+            setRestaurants(rests);
+          }}
+        >
+          Filter
+        </button>
+      </div>
       {restaurants.map((restaurant) => {
         return (
           <div key={restaurant._id}>

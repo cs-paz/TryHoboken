@@ -6,7 +6,17 @@ const {
   getRestaurantById,
   addComment,
   getRestaurantsByType,
+  getAllRestaurantTypes,
 } = require("../data/restaurants");
+
+router.get("/types", async (req, res) => {
+  try {
+    const types = await getAllRestaurantTypes();
+    res.json(types);
+  } catch (e) {
+    res.status(500).send(e);
+  }
+});
 
 router.get("/", async (req, res) => {
   try {
@@ -44,8 +54,7 @@ router.post("/type/:type", async (req, res) => {
   try {
     const restaurants = await getRestaurantsByType(type);
     res.json(restaurants);
-  }
-  catch(e){
+  } catch (e) {
     res.status(500).send(e);
   }
 });
