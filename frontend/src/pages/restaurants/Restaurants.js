@@ -52,7 +52,7 @@ const RestaurantsPage = () => {
   };
 
   return (
-    <div class="card">
+    <div className="card">
       <div>
         <label className="form-select">
           <select id="filterByType">
@@ -92,17 +92,18 @@ const RestaurantsPage = () => {
 const Restaurant = (restaurant) => {
   const link = "/restaurants/" + restaurant.restaurant._id;
   return (
-    <div class="card text-center justify-content-center">
-      <div class="card-header">
+    <div className="card text-center justify-content-center">
+      <div className="card-header">
         <h1>
           <Link to={link}>{restaurant.restaurant.name}</Link>
         </h1>
       </div>
-      <div class="card-body">
-        <p>{restaurant.restaurant.description}</p>
+      <div className="card-body">
         <p>{restaurant.restaurant.type}</p>
         <p>{restaurant.restaurant.address}</p>
-        <a href={restaurant.restaurant.url}>{restaurant.restaurant.url}</a>
+        <a href={restaurant.restaurant.url} target="_blank" rel="noreferrer">
+          {restaurant.restaurant.url}
+        </a>
       </div>
     </div>
   );

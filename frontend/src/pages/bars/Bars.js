@@ -52,7 +52,7 @@ const BarsPage = () => {
   };
 
   return (
-    <div class="card">
+    <div className="card">
       <div>
         <label className="form-select">
           <select id="filterByType">
@@ -92,17 +92,18 @@ const BarsPage = () => {
 const Bar = (bar) => {
   const link = "/bars/" + bar.bar._id;
   return (
-    <div class="card text-center justify-content-center">
-      <div class="card-header">
+    <div className="card text-center justify-content-center">
+      <div className="card-header">
         <h1>
           <Link to={link}>{bar.bar.name}</Link>
         </h1>
       </div>
-      <div class="card-body">
-        <p>{bar.bar.description}</p>
+      <div className="card-body">
         <p>{bar.bar.type}</p>
         <p>{bar.bar.address}</p>
-        <a href={bar.bar.url}>{bar.bar.url}</a>
+        <a href={bar.bar.url} target="_blank" rel="noreferrer">
+          {bar.bar.url}
+        </a>
       </div>
     </div>
   );
