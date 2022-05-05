@@ -42,6 +42,8 @@ const restaurantsData = [
     description:
       "Try the best pizzas in Hoboken. H&S Giovanni's Restaurant & Pizzeria is one of the most popular in Hoboken. Try their pizza, and you'll soon see why. Try some of Hoboken's best dishes at independent pizzerias in the city. Find new favorites and get a taste of what Hoboken has to offer. You can't say you've been to H&S Giovanni's Restaurant & Pizzeria until you've tried Cheese Pizza. This classic local favorite is what this establishment is known for. Add Soda to your pizza for a more satisfying meal. It's a great addition to any pizza from H&S Giovanni's Restaurant & Pizzeria. H&S Giovanni's Restaurant & Pizzeria has been a Slice partner since 2019. They've been serving the local community for a while now, so you can rely on them providing great pizza. Call ahead and get curbside pickup at H&S Giovanni's Restaurant & Pizzeria. It's never been easier to get hot, fresh pizza to go. Make your money stretch further by taking advantage of special offers at H&S Giovanni's Restaurant & Pizzeria. The only thing better than pizza is pizza at an affordable price. You can pay by credit card at H&S Giovanni's Restaurant & Pizzeria. That makes it easy to get your pizza as quickly as possible.",
     url: "https://www.hsgiovannisrestaurantpizzeria.com/",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1445865076943-8QXTQFOAW5CKMJ8WEUM3/image-asset.jpeg",
     comments: [],
     image: "",
   },
@@ -268,7 +270,8 @@ const restaurantsData = [
     description:
       "This bi-level restaurant offers Cuban fare, daily specials & live music in a stylish setting.",
     url: "https://www.thecubannj.com/",
-    comments: [],
+    image:
+      "https://static01.nyt.com/images/2012/12/02/nyregion/02DINENJ2_SPAN/02DINENJ2_SPAN-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
     comments: [],
   },
   {
@@ -367,6 +370,8 @@ const restaurantsData = [
     description:
       "Mainstay from 1939 serving Italian classics & cocktails in an old-school setting with Sinatra tunes.",
     url: "https://www.leosgrandevous.com/",
+    image:
+      "https://cdn.centraljersey.com/wp-content/uploads/sites/15/2019/04/unnamed-11.jpg",
     comments: [],
   },
   {
@@ -376,6 +381,8 @@ const restaurantsData = [
     description:
       "Hip, buzzing spot for creatively named pizzas, subs & other snacks, with inventive topping options.",
     url: "https://www.tonyboloneys.com/",
+    image:
+      "https://uploads-ssl.webflow.com/5fb70d38845a7b4f8280c796/6151d3531511f74bc461c665_Hoboken.jpg",
     comments: [],
   },
   {
@@ -385,6 +392,8 @@ const restaurantsData = [
     description:
       "Creative Italian BYOB spot for dinner/brunch served in a storefront gourmet shop or on the sidewalk.",
     url: "https://anthonydavids.com/",
+    image:
+      "https://vrconcierge.com/wp-content/uploads/2017/11/1307_anthony-davids-hoboken-interior-1.jpg",
     comments: [],
   },
   {
@@ -394,6 +403,8 @@ const restaurantsData = [
     description:
       "Casual, eco-minded regional chain for organic burgers (from beef to bison) & more, plus beer & wine.",
     url: "https://bareburger.com/",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1411324613852-AU9QYWBLMAK6IH0O6799/image-asset.jpeg",
     comments: [],
   },
   {
@@ -403,6 +414,8 @@ const restaurantsData = [
     description:
       "Burgers, shakes & fries arrive in a retro setting at this outpost of the international chain.",
     url: "https://locations.johnnyrockets.com/ll/US/NJ/Hoboken/134-Washington-St_",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/9c731587-0074-40c2-ab07-520928e9c3d1/Johnny+Rockets-front-1.jpg",
     comments: [],
   },
   {
@@ -412,6 +425,8 @@ const restaurantsData = [
     description:
       "This lively pizzeria features signature pies, housemade pastas & outdoor seating.",
     url: "https://www.margheritasrestaurant.com/",
+    image:
+      "https://www.hobokengirl.com/wp-content/uploads/2019/11/margheritas-reopening-1.png",
     comments: [],
   },
   {
@@ -421,6 +436,7 @@ const restaurantsData = [
     description:
       "Lively bar scene on the street level & a New American menu served in an upstairs dining room.",
     url: "http://thebrassrailnj.com/",
+    image: "https://eventective-media.azureedge.net/2072633_lg.jpg",
     comments: [],
   },
   {
@@ -430,6 +446,8 @@ const restaurantsData = [
     description:
       "Veteran, family-run Italian deli counter selling breakfast, pasta dishes & hot & cold sandwiches.",
     url: "http://www.lisasdeli.com/",
+    image:
+      "https://usmenuguide.com/wp-content/uploads/2019/10/lisashobokan.jpg",
     comments: [],
   },
 ];
@@ -442,6 +460,8 @@ const barsData = [
     description:
       "It's a Happy Place! The Pig & Parrot is a Key West type Bar & Grill with tropical food & drink menu. Fun atmosphere & music that you love to hear but no one plays: Bob Marley, Jimmy Buffet, Kenny Chesney.",
     url: "https://www.thepigandparrot.com/hoboken",
+    image:
+      "https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/mrkiutsn/4121424c-e98b-45a4-9a4a-ff9e954a95d4.jpg",
     comments: [],
   },
   {
@@ -450,7 +470,9 @@ const barsData = [
     address: "333 Washington St, Hoboken, NJ 07030-4871",
     description:
       "This bi-level restaurant offers Cuban fare, daily specials & live music in a stylish setting.",
-    url: "",
+    url: "https://www.thecubannj.com/",
+    image:
+      "https://static01.nyt.com/images/2012/12/02/nyregion/02DINENJ2_SPAN/02DINENJ2_SPAN-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
     comments: [],
   },
   {
@@ -460,6 +482,8 @@ const barsData = [
     description:
       "Classic American surf & turf plus Continental faves in a cozy white-tablecloth space with a bar.",
     url: "https://www.courtstreet.com/",
+    image:
+      "https://media-cdn.tripadvisor.com/media/photo-s/06/b5/ff/9f/court-street.jpg",
     comments: [],
   },
   {
@@ -471,6 +495,8 @@ const barsData = [
     description:
       "Sausages, beer & other Austrian-Hungarian favorites served at communal tables indoors & out.",
     url: "https://www.pilsenerhaus.com/",
+    image:
+      "https://www.insidebusinessnyc.com/wp-content/uploads/2014/05/pilsnerhaus1.jpg",
     comments: [],
   },
   {
@@ -480,6 +506,8 @@ const barsData = [
     description:
       "Convivial haunt featuring Irish pub grub & a large beer list, plus a fireplace & outdoor seating.",
     url: "https://www.carpediemhoboken.com/menus",
+    image:
+      "https://media-cdn.tripadvisor.com/media/photo-s/04/a1/cb/25/nice-bar.jpg",
     comments: [],
   },
   {
@@ -489,6 +517,7 @@ const barsData = [
     description:
       "Sophisticated chophouse chain serving steak, seafood, sandwiches & cocktails in a trendy space.",
     url: "https://www.delfriscosgrille.com/location/del-friscos-grille-hoboken-nj/#menus",
+    image: "https://resizer.otstatic.com/v2/photos/wide-huge/1/24008979.jpg",
     comments: [],
   },
   {
@@ -498,6 +527,8 @@ const barsData = [
     description:
       "New American fare & drink specials in a roadhouse-style space that's bustling on weekends.",
     url: "https://www.madisonbarandgrill.com/",
+    image:
+      "https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.nj.com/home/njo-media/width2048/img/hobokennow_impact/photo/madison-hobokenjpg-1a73532f45a818e6.jpg",
     comments: [],
   },
   {
@@ -507,6 +538,7 @@ const barsData = [
     description:
       "Upscale wine bar where various vintages are pairable with a menu of Italian small plates.",
     url: "http://bin14.com/",
+    image: "https://static.spotapps.co/web/bin14--com/custom/slide_4_new.jpg",
     comments: [],
   },
   {
@@ -516,6 +548,7 @@ const barsData = [
     description:
       "Lively bar scene on the street level & a New American menu served in an upstairs dining room.",
     url: "http://thebrassrailnj.com/",
+    image: "https://eventective-media.azureedge.net/2072633_lg.jpg",
     comments: [],
   },
 ];
