@@ -21,6 +21,8 @@ const restaurantsData = [
       "The only true coal brick oven pizzeria in Hoboken where we specialize in turning out authentic Margherita style pizzas fired at 1000 degrees in our custom built coal burning oven. Come join us and find out why devotees insist we are, the best in NJ, hands down.",
     url: "https://www.grimaldis.com/",
     comments: [],
+    image:
+      "https://r7s2x5s4.stackpathcdn.com/dbcwp/wp-content/uploads/2017/03/our-menu-768.jpg",
   },
   {
     name: "Napoli's Pizza",
@@ -30,6 +32,8 @@ const restaurantsData = [
       "Frank Volpe loves Hoboken and its small scale Manhattan style is just what he was looking for. After working in his family’s NYC pizzeria for 12 years, he decided to open his own pizzeria in Hoboken. In 2007, Volpe branched out on his own and opened Napoli’s.With its true Neapolitan style pizza, fresh pasta, paninis and wraps, there’s something for everyone. Volpe learned the business at Lombardi’s Pizzeria, located at 32 Spring Street in Soho. One of NYC’s busiest pizzerias, you can be assured that he knows his craft! Lombardi’s was the very first licensed pizzeria in the United States. It was established by Volpe’s family back in 1905. Using only the freshest ingredients, Frank takes special pride in ensuring that his customers’ receive only the best. Customer service is tops, and you’ll never be rushed. You may have to wait a few extra minutes for your pizza – but it’s worth it! Frank is making sure that your pizza pie is perfect. Napoli’s specials are updated regularly, so be sure to check our menu here and when you stop in!",
     url: "https://napolishobokenpizza.com/",
     comments: [],
+    image:
+      "https://media-cdn.tripadvisor.com/media/photo-s/06/b8/ad/0d/napoli-s-brick-oven-pizza.jpg",
   },
   {
     name: "H&S Giovanni's Restaurant & Pizza",
@@ -39,6 +43,7 @@ const restaurantsData = [
       "Try the best pizzas in Hoboken. H&S Giovanni's Restaurant & Pizzeria is one of the most popular in Hoboken. Try their pizza, and you'll soon see why. Try some of Hoboken's best dishes at independent pizzerias in the city. Find new favorites and get a taste of what Hoboken has to offer. You can't say you've been to H&S Giovanni's Restaurant & Pizzeria until you've tried Cheese Pizza. This classic local favorite is what this establishment is known for. Add Soda to your pizza for a more satisfying meal. It's a great addition to any pizza from H&S Giovanni's Restaurant & Pizzeria. H&S Giovanni's Restaurant & Pizzeria has been a Slice partner since 2019. They've been serving the local community for a while now, so you can rely on them providing great pizza. Call ahead and get curbside pickup at H&S Giovanni's Restaurant & Pizzeria. It's never been easier to get hot, fresh pizza to go. Make your money stretch further by taking advantage of special offers at H&S Giovanni's Restaurant & Pizzeria. The only thing better than pizza is pizza at an affordable price. You can pay by credit card at H&S Giovanni's Restaurant & Pizzeria. That makes it easy to get your pizza as quickly as possible.",
     url: "https://www.hsgiovannisrestaurantpizzeria.com/",
     comments: [],
+    image: "",
   },
   {
     name: "The Brick",
@@ -48,6 +53,8 @@ const restaurantsData = [
       "About The Brick: Select your favorite Pizza, Pasta, Sandwiches dishes directly from the menu of The Brick located at 1122 Washington St, Hoboken, NJ 07030.The Brick has established a reputation for providing highest quality food, excellent customer service and speedy delivery to customers in the Hoboken area ... always at the lowest possible price too. We can promise satisfaction because all dishes at The Brick are freshly prepared every day with premium ingredientSpeaking for the entire staff at The Brick, we appreciate our customers for their loyalty and past patronage. Going forward, we promise to maintain the same high quality operation to serve you in the futurThe Brick is now accepting online orders for delivery or takeout through BeyondMenu.com. Enjoy the best, freshest Pizza, Pasta, Sandwiches cuisine, and remember: THERE IS NO WAITING IN LINE WHEN YOU ORDER ONLINE",
     url: "https://www.hobokenthebrick.com/?utm_source=gmb&utm_medium=website",
     comments: [],
+    image:
+      "https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1405884066299-REE75F6X1QIA2BZONIAI/image-asset.jpeg?format=1500w",
   },
   {
     name: "Ayame Hibachi & Sushi",
@@ -57,6 +64,7 @@ const restaurantsData = [
       "Ayame Hibachi & Sushi offers delicious dining, takeout and delivery to Hoboken, NJ. Ayame Hibachi & Sushi is a cornerstone in the Hoboken community and has been recognized for its outstanding Sushi cuisine, excellent service and friendly staff. sOur Sushi restaurant is known for its modern interpretation of classic dishes and its insistence on only using high quality fresh ingredients.",
     url: "https://www.ayamehibachisushinj.com/",
     comments: [],
+    image: "http://ayamehoboken.com/image2/4.jpg",
   },
   {
     name: "Robongi",
@@ -66,6 +74,8 @@ const restaurantsData = [
       "Robongi Hoboken offers delicious dining, takeout and delivery to Hoboken, NJ. Robongi Hoboken is a cornerstone in the Hoboken community and has been recognized for its outstanding Sushi cuisine, excellent service and friendly staff. Sushi restaurant is known for its modern interpretation of classic dishes and its insistence on only using high quality fresh ingredients.",
     url: "https://www.robonginj.com/",
     comments: [],
+    image:
+      "https://www.hobokengirl.com/wp-content/uploads/2018/09/robongi-sushi-hoboken_4156-768x768.jpg",
   },
   {
     name: "Okinawa Sushi Grill",
@@ -75,6 +85,8 @@ const restaurantsData = [
       "Some Sushi Place offers one particular menu only. Okinawa Sushi Restaurant in Hoboken, NJ has different type of cuisine ; Japanese, Thai and Chinese dishes. Satisfying your cravings on fresh made sushi but also giving the option to try other cuisines. Catering and Parties are Welcome. We also provide Free parking in Shopping Center . Providing Dine in, Take Out and Delivery. Come and enjoy your dining!",
     url: "https://okinawasushinj.com/",
     comments: [],
+    image:
+      "https://okinawasushinj.com/wp-content/uploads/2021/07/logo-1024x667.png",
   },
   {
     name: "South Street Fish & Ramen Co.",
@@ -84,6 +96,8 @@ const restaurantsData = [
       "Easygoing Japanese eatery serving poke rice bowls, salads, sushi burritos & ramen noodles.",
     url: "http://www.southstreet.co/",
     comments: [],
+    image:
+      "https://postmates.com/store/south-street-fish-%26-ramen-co-hoboken/9YItk1XhSbCsKyAcG2uc7Q",
   },
   {
     name: "McDonald's",
@@ -93,6 +107,8 @@ const restaurantsData = [
       "From adding more balanced options to our Happy Meal®, to serving up fresh beef Quarter Pounder® burgers that are cooked when you order, we’re always finding ways to show our commitment to our customers and our food. ",
     url: "https://www.mcdonalds.com/us/en-us/location/NJ/HOBOKEN/234-WASHINGTON-ST/3876.html?cid=RF:YXT:GMB::Clicks",
     comments: [],
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/220px-McDonald%27s_Golden_Arches.svg.png",
   },
   {
     name: "Taco Bell",
@@ -102,6 +118,8 @@ const restaurantsData = [
       "Fast-food chain serving Mexican-inspired fare such as tacos, quesadillas & nachos.",
     url: "https://www.tacobell.com/",
     comments: [],
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Taco_Bell_2016.svg/150px-Taco_Bell_2016.svg.png",
   },
   {
     name: "Shake Shack",
@@ -111,6 +129,8 @@ const restaurantsData = [
       "Hip, counter-serve chain for gourmet takes on fast-food classics like burgers & frozen custard.",
     url: "https://www.shakeshack.com/location/hoboken-nj?utm_source=G&utm_medium=local&utm_campaign=google-local",
     comments: [],
+    image:
+      "https://www.hobokengirl.com/wp-content/uploads/2020/01/shake-shake-hoboken-650x576.png",
   },
   {
     name: "Grubbs Take Away",
@@ -120,6 +140,8 @@ const restaurantsData = [
       "Take out only restaurant that offers fast service and a variety of food to choose from.",
     url: "https://grubbstakeaway.com/",
     comments: [],
+    image:
+      "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=800,height=250,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/store/header/0ebb480a-ad44-41a0-b68e-a526c0df9874.png",
   },
   {
     name: "Charrito's Midtown",
@@ -128,6 +150,8 @@ const restaurantsData = [
     description: "",
     url: "http://loscharritos.com/index.php/midtown-hoboken/",
     comments: [],
+    image:
+      "https://www.ijustwanttoeat.com/post/restaurant-review/charritos-vegetarian-mexican-hoboken-nj",
   },
   {
     name: "Tacoria",
@@ -137,6 +161,7 @@ const restaurantsData = [
       "TACORIA IS MORE THAN JUST A RESTAURANT WITH THE BEST MEXICAN FOOD EVER (ACCORDING TO OUR MOMS). IT’S OUR WAY OF PAYING HOMAGE TO THE VIBRANT COLORS, RICH CULTURE AND WARM HOSPITALITY OF OUR SOUTHERN NEIGHBORS. OUR GOAL IS TO MAKE TACORIA A PLACE THAT INSPIRES AND IMPROVES OUR LOCAL COMMUNITIES THROUGH AMAZING FRESH FOOD, GREAT PEOPLE AND AN EXCITING ATMOSPHERE. A PLACE WHERE EVERYONE CAN EAT FRESH, FEEL FRESH, BE FRESH!",
     url: "https://tacoria.com/",
     comments: [],
+    image: "https://tacoria.com/wp-content/uploads/2018/10/tacoria-logo.png",
   },
   {
     name: "Baja",
