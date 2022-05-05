@@ -99,6 +99,7 @@ const Bar = (bar) => {
         </h1>
       </div>
       <div className="card-body">
+        <img src={bar.bar.image} height={150} style={{ marginBottom: 10 }} />
         <p>{bar.bar.type}</p>
         <p>{bar.bar.address}</p>
         <a href={bar.bar.url} target="_blank" rel="noreferrer">

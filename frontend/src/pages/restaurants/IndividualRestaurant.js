@@ -23,15 +23,20 @@ const IndividualRestaurant = () => {
         <h1>{restaurantData.name}</h1>
       </div>
       <div class="card-body">
-      <p>{restaurantData.type}</p>
-      <p>{restaurantData.address}</p>
-      <p>{restaurantData.description}</p>
-      <a href={restaurantData.url} target="_blank" rel="noreferrer">
-        {restaurantData.url}
-      </a>
+        <img
+          src={restaurantData.image}
+          height={150}
+          style={{ marginBottom: 10 }}
+        />
+        <p>{restaurantData.type}</p>
+        <p>{restaurantData.address}</p>
+        <p>{restaurantData.description}</p>
+        <a href={restaurantData.url} target="_blank" rel="noreferrer">
+          {restaurantData.url}
+        </a>
       </div>
       <div class="card-footer text-center justify-content-center">
-      <AddComment id={id} type="restaurants" />
+        <AddComment id={id} type="restaurants" />
       </div>
       <CommentsSection comments={restaurantData.comments} />
     </div>

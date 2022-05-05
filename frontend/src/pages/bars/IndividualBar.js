@@ -23,15 +23,16 @@ const IndividualBar = () => {
         <h1>{barData.name}</h1>
       </div>
       <div class="card-body">
-      <p>{barData.type}</p>
-      <p>{barData.address}</p>
-      <p>{barData.description}</p>
-      <a href={barData.url} target="_blank" rel="noreferrer">
-        {barData.url}
-      </a>
+        <img src={barData.image} height={150} style={{ marginBottom: 10 }} />
+        <p>{barData.type}</p>
+        <p>{barData.address}</p>
+        <p>{barData.description}</p>
+        <a href={barData.url} target="_blank" rel="noreferrer">
+          {barData.url}
+        </a>
       </div>
       <div class="card-footer text-center justify-content-center">
-      <AddComment id={id} barData type={"bars"} />
+        <AddComment id={id} barData type={"bars"} />
       </div>
       <CommentsSection comments={barData.comments} />
     </div>

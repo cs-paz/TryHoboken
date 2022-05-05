@@ -99,6 +99,11 @@ const Restaurant = (restaurant) => {
         </h1>
       </div>
       <div className="card-body">
+        <img
+          src={restaurant.restaurant.image}
+          height={150}
+          style={{ marginBottom: 10 }}
+        />
         <p>{restaurant.restaurant.type}</p>
         <p>{restaurant.restaurant.address}</p>
         <a href={restaurant.restaurant.url} target="_blank" rel="noreferrer">
